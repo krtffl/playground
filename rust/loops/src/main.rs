@@ -14,7 +14,7 @@ fn main() {
         }
     };
 
-    println!("the result is {result}")
+    println!("the result is {result}");
 
     let mut count = 0;
     'counting_up: loop {
@@ -35,8 +35,7 @@ fn main() {
         count += 1;
     }
 
-    println!("end count = {count}")
-
+    println!("end count = {count}");
 
     let mut number = 3;
 
@@ -62,7 +61,7 @@ fn main() {
     }
 
     for number in (1..4).rev() {
-        println("{number}!");
+        println!("{number}!");
     }
     println!("lift of!");
 }

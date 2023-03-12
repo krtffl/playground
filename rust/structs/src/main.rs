@@ -18,7 +18,7 @@ fn main() {
 
     let user3 = User {
         email: String::from("example3@example.com"),
-        username: use1.username,
+        username: user1.username,
         active: user1.active,
         sign_in_count: user1.sign_in_count,
     };
@@ -37,9 +37,9 @@ fn main() {
     // the struct is not owning all their data, so it will fail
     // for those cases we need lifetime specifiers
     let wrong_user = User {
-        email: "example@example.com",
+        email: String::from("example@example.com"),
         ..user3
-    }
+    };
 }
 
 struct User {
